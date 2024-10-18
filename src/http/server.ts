@@ -1,6 +1,7 @@
 import fastify from 'fastify'
+import { env } from '../../env-schema'
 
-const PORT = 3000
+const PORT = env.PORT
 const app = fastify()
 
 app.listen({ port: PORT }).then(() => {
